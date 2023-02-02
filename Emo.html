@@ -6,10 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Emo Larry</title>
     <link rel="stylesheet" href="Larry.css">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="images/emo-icon.png" type="image/png">
+    <script src="paradise.js" defer></script>
 </head>
 <body>
     <img src="images/emo-larry.jpg" alt="Emo Larry" class="i-feel-nothing">
-    <embed src="/html/Kalimba.mp3" loop="true" autostart="true" width="2" height="0">
+
+    <!-- music for chrome users -->
+    <iframe allow="autoplay" id="iframeAudio"></iframe> 
+    <!-- ---------------------- -->
+
+    <!-- music for other platforms -->
+    <audio autoplay loop  id="playAudio">
+        <source id="otherGothChicks">
+    </audio>
+    <!-- ------------------------ -->
 </body>
 </html>
