@@ -14,4 +14,5 @@ function audioCue() {
     }
 }
 
-document.addEventListener("click", audioCue)
+// document.addEventListener("click", audioCue)
+audioCue()
