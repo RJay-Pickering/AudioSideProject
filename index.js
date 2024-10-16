@@ -15,7 +15,7 @@ function audioCue() {
 }
 
 // document.addEventListener("click", audioCue)
-// audioCue()
+audioCue()
 const isMobile = {
     Android: function() {
         return navigator.userAgent.match(/Android/i);
@@ -37,7 +37,5 @@ const isMobile = {
     }
 };
 if (isMobile.any() !== null) {
-    document.addEventListener("click", audioCue)
-} else {
-    audioCue()
+    alert("This website will not play audio on most mobile devices, please open this on an laptop or bigger device for audio.")
 }
