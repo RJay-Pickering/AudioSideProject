@@ -12,10 +12,20 @@ function audioCue() {
         counter++
         audio.play();
     }
+
+    if (nowPlaying == "songs/i-am-all-of-me.mp3") {
+        document.getElementById("deadInside").src = "images/ShadowLarry.png"
+    }
 }
 
-// document.addEventListener("click", audioCue)
-audioCue()
+var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor)
+if (isChrome) {
+    alert("Due to your browser now allowing autoplay, you must click/tap the screen to hear Emo Larry's Anthem.")
+    document.addEventListener("click", audioCue)
+} else {
+    audioCue()
+}
+
 const isMobile = {
     Android: function() {
         return navigator.userAgent.match(/Android/i);
